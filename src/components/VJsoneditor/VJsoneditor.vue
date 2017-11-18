@@ -38,8 +38,7 @@
         },
       }, this.options);
 
-      this.jsoneditor = new JSONEditor(container, options);
-      this.jsoneditor.set(this.value);
+      this.jsoneditor = new JSONEditor(container, options, this.value);
     },
     beforeDestroy() {
       if (this.jsoneditor) {
