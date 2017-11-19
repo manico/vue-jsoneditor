@@ -1,6 +1,6 @@
 {
   "name": "vue-jsoneditor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue implementation of JSONEditor",
   "author": "jadranko.dragoje@gmail.com",
   "private": false,
