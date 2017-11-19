@@ -12,6 +12,9 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs",
     "build": "node build/build.js"
   },
+  "publishConfig": {
+    "registry": "https://www.npmjs.com"
+  },
   "dependencies": {
     "jsoneditor": "^5.10.1",
     "vue": "^2.5.2"
