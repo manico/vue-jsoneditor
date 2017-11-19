@@ -2,26 +2,58 @@
 
 > Vue implementation of JSONEditor
 
-## Build Setup
+## Installation
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
+```bash
+# npm
+npm install vue-jsoneditor
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Using
+
+### Import globally
+
+```javascript
+import Vue from 'vue';
+import VJsoneditor from './components/VJsoneditor';
+import App from './App';
+
+Vue.config.productionTip = false;
+Vue.use(VJsoneditor);
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  template: '<App/>',
+  components: { App },
+});
+
+```
+
+### Import locally
+
+```javascript
+import VJsoneditor from './components/VJsoneditor';
+
+export default {
+  name: 'my-component',
+  components: {
+    VJsoneditor,
+  },
+  data() {
+    return {};
+  },
+};
+```
+
+### Use in template
+
+```html
+<template>
+  <div id="app">
+    <v-jsoneditor v-model="json"
+                  @input="jsonChanged">
+    </v-jsoneditor>
+  </div>
+</template>
+```
