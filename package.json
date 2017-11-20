@@ -1,16 +1,19 @@
 {
   "name": "vue-jsoneditor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Vue implementation of JSONEditor",
   "author": "jadranko.dragoje@gmail.com",
+  "main": "dist/lib/vjsoneditor.min.js",
   "private": false,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit/specs",
-    "build": "node build/build.js"
+    "prepublishOnly": "npm run build",
+    "dev": "npm-run-all --parallel dev:lib dev:docs",
+    "dev:lib": "webpack --config build/webpack.lib.conf.js --watch --progress --hide-modules",
+    "dev:docs": "node build/dev-server.js",
+    "build": "npm run build:lib && npm run build:docs",
+    "build:lib": "node build/build-lib.js",
+    "build:docs": "node build/build.js",
+    "lint": "eslint --ext .js,.vue src"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
