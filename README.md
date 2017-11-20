@@ -15,7 +15,7 @@ npm install vue-jsoneditor
 
 ```javascript
 import Vue from 'vue';
-import VJsoneditor from './components/VJsoneditor';
+import VJsoneditor from 'vue-jsoneditor';
 import App from './App';
 
 Vue.config.productionTip = false;
