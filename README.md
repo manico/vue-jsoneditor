@@ -33,7 +33,7 @@ new Vue({
 ### Import locally
 
 ```javascript
-import VJsoneditor from './components/VJsoneditor';
+import { VJsoneditor } from 'vue-jsoneditor';
 
 export default {
   name: 'my-component',

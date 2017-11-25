@@ -1,3 +1,2 @@
-import VJsoneditor from './components/VJsoneditor';
-
-export default VJsoneditor;
+export { VJsoneditor as default } from './components/VJsoneditor';
+export { VJsoneditor } from './components/VJsoneditor/VJsoneditor';

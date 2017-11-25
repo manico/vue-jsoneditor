@@ -1,6 +1,6 @@
 {
   "name": "vue-jsoneditor",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Vue implementation of JSONEditor",
   "author": "jadranko.dragoje@gmail.com",
   "main": "dist/lib/vjsoneditor.min.js",
@@ -19,6 +19,14 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manico/vue-jsoneditor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manico/vue-jsoneditor/issues",
+    "email": "jadranko.dragoje@gmail.com"
   },
   "dependencies": {
     "jsoneditor": "^5.10.1",
