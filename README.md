@@ -27,23 +27,6 @@ new Vue({
   template: '<App/>',
   components: { App },
 });
-
-```
-
-### Import locally
-
-```javascript
-import { VJsoneditor } from 'vue-jsoneditor';
-
-export default {
-  name: 'my-component',
-  components: {
-    VJsoneditor,
-  },
-  data() {
-    return {};
-  },
-};
 ```
 
 ### Use in template
