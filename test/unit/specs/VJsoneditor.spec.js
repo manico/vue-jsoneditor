@@ -1,10 +1,10 @@
 import Vue from 'vue';
-import VJsoneditor from '@/components/VJsoneditor';
+import VJsoneditor from '@/components/VJsoneditor/VJsoneditor';
 
 describe('VJsoneditor.vue', () => {
-  it('should render editor', () => {
+  it('should have name', () => {
     const Constructor = Vue.extend(VJsoneditor);
     const vm = new Constructor().$mount();
-    // TODO: Add test
+    expect(vm.$options.name).to.equal('v-jsoneditor');
   });
 });

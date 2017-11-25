@@ -4,7 +4,7 @@
 </template>
 
 <script>
-  import JSONEditor from 'jsoneditor';
+  import JSONEditor from 'jsoneditor/dist/jsoneditor.min';
   import 'jsoneditor/dist/jsoneditor.min.css';
 
   export default {
