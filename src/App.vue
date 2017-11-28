@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import VJsoneditor from './components/VJsoneditor/VJsoneditor';
+  import VJsoneditor from './components/VJsoneditor';
 
   export default {
     name: 'app',

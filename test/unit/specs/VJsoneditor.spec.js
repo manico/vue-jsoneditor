@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import VJsoneditor from '@/components/VJsoneditor/VJsoneditor';
+import VJsoneditor from '@/components/VJsoneditor';
 
 describe('VJsoneditor.vue', () => {
   it('should have name', () => {

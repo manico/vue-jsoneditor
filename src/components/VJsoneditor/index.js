@@ -1,7 +1,7 @@
 import VJsoneditor from './VJsoneditor';
 
-export default {
-  install(Vue) {
-    Vue.component(VJsoneditor.name, VJsoneditor);
-  },
+VJsoneditor.install = function install(Vue) {
+  Vue.component(VJsoneditor.name, VJsoneditor);
 };
+
+export default VJsoneditor;

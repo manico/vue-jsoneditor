@@ -29,6 +29,31 @@ new Vue({
 });
 ```
 
+### Import locally
+
+```javascript
+import VJsoneditor from 'vue-jsoneditor';
+
+export default {
+  name: 'app',
+  components: {
+    VJsoneditor,
+  },
+  data() {
+    return {
+      json: {
+        sucess: true,
+      },
+    };
+  },
+  methods: {
+    jsonChanged(value) {
+      console.log(JSON.stringify(value));
+    },
+  },
+};
+```
+
 ### Use in template
 
 ```html
