@@ -73,9 +73,7 @@ export default {
     this.onChange();
   },
   beforeDestroy() {
-    if (this.jsoneditor) {
-      this.jsoneditor.destroy();
-      this.jsoneditor = null;
-    }
+    this.jsoneditor.destroy();
+    this.jsoneditor = null;
   },
 };
