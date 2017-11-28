@@ -54,7 +54,7 @@ describe('VJsoneditor.vue', () => {
     const spy = sinon.spy(VJsoneditor.methods, 'onError');
     const Constructor = Vue.extend(VJsoneditor);
     const vm = new Constructor().$mount();
-    
+
     // Cannot programatically trigger this
     vm.onError('Error');
 
