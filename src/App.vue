@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <v-jsoneditor v-model="json"
-                  @input="jsonChanged">
+                  :options="options"
+                  @input="jsonChanged"
+                  @error="jsonError">
     </v-jsoneditor>
   </div>
 </template>
@@ -19,12 +21,23 @@
         json: {
           sucess: true,
         },
+        options: {
+        },
       };
     },
     methods: {
       jsonChanged(value) {
-        console.log(JSON.stringify(value));
+        console.log('[VJsoneditor] JSON Changed =>', JSON.stringify(value));
+      },
+      jsonError(error) {
+        console.log('[VJsoneditor] JSON Error =>', error);
       },
     },
   };
 </script>
+
+<style>
+  div.jsoneditor-tree {
+    padding-bottom: 10em !important;
+  }
+</style>
