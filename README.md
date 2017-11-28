@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/manico/vue-jsoneditor.svg?branch=master)](https://travis-ci.org/manico/vue-jsoneditor)
+
 # vue-jsoneditor
 
 > Vue implementation of JSONEditor
