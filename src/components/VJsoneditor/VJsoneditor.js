@@ -1,3 +1,4 @@
+// https://github.com/josdejong/jsoneditor/blob/master/docs/api.md
 import JSONEditor from 'jsoneditor/dist/jsoneditor.min';
 import 'jsoneditor/dist/jsoneditor.min.css';
 
@@ -68,6 +69,8 @@ export default {
       this.getOptions(),
       this.value,
     );
+
+    this.onChange();
   },
   beforeDestroy() {
     if (this.jsoneditor) {

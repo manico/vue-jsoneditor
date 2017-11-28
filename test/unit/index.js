@@ -2,10 +2,10 @@ import Vue from 'vue';
 
 Vue.config.productionTip = false;
 
-// Require all test files
+// Require files for test
 const testsContext = require.context('./specs', true, /\.spec$/);
 testsContext.keys().forEach(testsContext);
 
-// Require all src files except main.js for coverage
-const srcContext = require.context('../../src', true, /^\.\/(?!main(\.js)?$)/);
+// Require files for coverage
+const srcContext = require.context('../../src/components', true);
 srcContext.keys().forEach(srcContext);

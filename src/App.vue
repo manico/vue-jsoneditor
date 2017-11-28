@@ -19,7 +19,7 @@
     data() {
       return {
         json: {
-          sucess: true,
+          success: true,
         },
         options: {
         },
