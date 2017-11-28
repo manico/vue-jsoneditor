@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/manico/vue-jsoneditor.svg?branch=master)](https://travis-ci.org/manico/vue-jsoneditor)
-
-[![codecov](https://codecov.io/gh/manico/vue-jsoneditor/branch/master/graph/badge.svg)](https://codecov.io/gh/manico/vue-jsoneditor)
+[![Build Status](https://travis-ci.org/manico/vue-jsoneditor.svg?branch=master)](https://travis-ci.org/manico/vue-jsoneditor) [![codecov](https://codecov.io/gh/manico/vue-jsoneditor/branch/master/graph/badge.svg)](https://codecov.io/gh/manico/vue-jsoneditor)
 
 # vue-jsoneditor
 
