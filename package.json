@@ -15,7 +15,8 @@
     "build:docs": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "test": "npm run unit"
+    "test": "npm run unit",
+    "codecov": "codecov"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
