@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/manico/vue-jsoneditor.svg?branch=master)](https://travis-ci.org/manico/vue-jsoneditor) [![codecov](https://codecov.io/gh/manico/vue-jsoneditor/branch/master/graph/badge.svg)](https://codecov.io/gh/manico/vue-jsoneditor) [![codebeat badge](https://codebeat.co/badges/81171683-f0d7-4a4f-8664-25dba6824452)](https://codebeat.co/projects/github-com-manico-vue-jsoneditor-master)
+[![NPM version](https://badge.fury.io/js/vue-jsoneditor.svg)](http://badge.fury.io/js/vue-jsoneditor) [![Build Status](https://travis-ci.org/manico/vue-jsoneditor.svg?branch=master)](https://travis-ci.org/manico/vue-jsoneditor) [![codecov](https://codecov.io/gh/manico/vue-jsoneditor/branch/master/graph/badge.svg)](https://codecov.io/gh/manico/vue-jsoneditor) [![codebeat badge](https://codebeat.co/badges/81171683-f0d7-4a4f-8664-25dba6824452)](https://codebeat.co/projects/github-com-manico-vue-jsoneditor-master)
 
 # vue-jsoneditor
 
