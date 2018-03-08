@@ -31,6 +31,11 @@ export default {
       jsoneditor: null,
     };
   },
+  watch: {
+    value(value) {
+      this.jsoneditor.set(value);
+    },
+  },
   methods: {
     getOptions() {
       const defaults = {

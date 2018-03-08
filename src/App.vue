@@ -18,9 +18,7 @@
     },
     data() {
       return {
-        json: {
-          success: true,
-        },
+        json: null,
         options: {
         },
       };
@@ -32,6 +30,11 @@
       jsonError(error) {
         console.log('[VJsoneditor] JSON Error =>', error);
       },
+    },
+    mounted() {
+      this.json = {
+        success: true,
+      };
     },
   };
 </script>
