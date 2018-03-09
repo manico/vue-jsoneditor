@@ -67,3 +67,12 @@ export default {
   </div>
 </template>
 ```
+
+## Include jsoneditor api
+
+Don't forget to include jsoneditor API:
+
+```html
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.14.0/jsoneditor.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.14.0/jsoneditor.min.js"></script>
+```
