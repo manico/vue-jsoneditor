@@ -56,7 +56,11 @@ export default {
       });
     },
     onChange() {
-      this.$emit('input', this.jsoneditor.get());
+      try {
+        const value = this.jsoneditor.get();
+        this.$emit('input', value);
+        // eslint-disable-next-line
+      } catch (e) { }
     },
     onError(error) {
       this.$emit('error', error);
