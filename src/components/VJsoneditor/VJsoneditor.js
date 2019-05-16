@@ -29,11 +29,14 @@ export default {
   data() {
     return {
       jsoneditor: null,
+      isInternalTrigger: false
     };
   },
   watch: {
     value(value) {
-      this.jsoneditor.set(value);
+      if(!this.isInternalTrigger) {
+        this.jsoneditor.set(value);
+      }
     },
   },
   methods: {
@@ -59,6 +62,7 @@ export default {
       try {
         const value = this.jsoneditor.get();
         this.$emit('input', value);
+        this.isInternalTrigger = true;
         // eslint-disable-next-line
       } catch (e) { }
     },
